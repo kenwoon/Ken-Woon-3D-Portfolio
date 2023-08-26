@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 matcha-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-[#B9C7AB]`}>
+          <h1 className={`${styles.heroHeadText} text-[#B9C7AC]`}>
             Hi, I'm 
             <span className="text-[#9EB384]">
               &nbsp; Ken
