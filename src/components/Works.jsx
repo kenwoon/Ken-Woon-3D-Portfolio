@@ -6,7 +6,7 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { projects } from '../constants';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, company, company_link, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -23,10 +23,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover cursor-pointer" onClick={()=> window.open(image)}>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:w-[10%] hover:h-[25%]"
             >
               <img
                 src={github}
@@ -37,7 +37,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-[#e3ece9] font-bold text-[24px]">{name}</h3>
+          <h3 className="text-[#e3ece9] font-bold text-[24px] cursor-pointer hover:text-white" onClick={()=> window.open(source_code_link)}>{name}</h3>
+          <p className="text-[#9EB384] text-[16px] font-semibold cursor-pointer hover:text-[#B1C29C]" onClick={()=> window.open(company_link)} style={{ margin: 0}}>{company}</p>
           <p className="mt-2 text-[#ebebf4] text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">

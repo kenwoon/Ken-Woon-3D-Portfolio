@@ -52,7 +52,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-[#6D4930] text-[17px] max-w-3xl leading-[30px]'
       >
-        My expertise lies in backend infrastructure, with proficiency in programming languages, especially Java, Python, and C. Additionally, I have experience with frontend languages like HTML and JavaScript. I am knowledgeable in areas such as machine learning and operating system scheduling algorithms as well.
+        My expertise lies in backend infrastructure, with proficiency in programming languages, especially Java, Python, and C. Additionally, I have experience with frontend languages like CASS, HTML, and JavaScript. I am knowledgeable in areas such as machine learning and operating system scheduling algorithms as well.
       </motion.p>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}

@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -73,9 +73,9 @@ const Navbar = () => {
                   key={nav.id}
                   className={`${
                     active === nav.title
-                    ? "text-white"
-                    : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    ? "text-[#D1B79D]"
+                    : "text-[#C6A685]"
+                  } hover:text-[#D1B79D] font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title)

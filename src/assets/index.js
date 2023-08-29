@@ -31,8 +31,10 @@ import meta from "./company/meta.png";
 import bitnine from "./company/bitnine.png";
 import ubc from "./company/ubc.png"
 
+import portfoliocreation from "./portfoliocreation.png";
 import agesql from "./agesql.png";
-import inventorysystem from "./inventorysystem.png"
+import inventorysystem from "./inventorysystem.png";
+import dataanalytics from "./dataanalytics.png";
 
 export {
   logo,
@@ -65,6 +67,8 @@ export {
   meta,
   bitnine,
   ubc,
+  portfoliocreation,
   agesql,
-  inventorysystem
+  inventorysystem,
+  dataanalytics
 };

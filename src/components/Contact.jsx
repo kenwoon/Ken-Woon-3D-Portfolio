@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import { RoomCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -55,7 +55,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-[#1B2414] p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -71,8 +71,9 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="What is your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-[#4d4943] text-white rounded-lg outlined-none border-none font-medium"
+              autoComplete="name"
             />
           </label>
           <label className="flex flex-col">
@@ -82,8 +83,9 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder="What is your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-[#4d4943] text-white rounded-lg outlined-none border-none font-medium"
+              autoComplete="email"
             />
           </label>
           <label className="flex flex-col">
@@ -93,7 +95,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="What would you like to send?"
               className="bg-tertiary py-4 px-6 placeholder:text-[#4d4943] text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
@@ -107,9 +109,9 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="flex flex-col xl:flex-1 xl:h-auto sm:h-[500px] md:h-[1000px] h-[1000px]"
       >
-        <EarthCanvas />
+        <RoomCanvas />
       </motion.div>
     </div>
   );

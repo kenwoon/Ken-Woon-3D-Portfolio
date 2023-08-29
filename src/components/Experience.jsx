@@ -9,12 +9,12 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#646e7c', color: '#c6a685'}}
-    contentArrowStyle={{ borderRight: '7px solid #646e7c'}}
+    contentStyle={{ background: '#4A4941', color: '#c6a685'}}
+    contentArrowStyle={{ borderRight: '7px solid #4A4941'}}
     date={experience.date}
     iconStyle={{ background: experience.iconBg}}
     icon={
-      <div className='flex justify-center items-center w-full h-full'>
+      <div className='border-color flex justify-center items-center w-full h-full'>
         <img
           src={experience.icon}
           alt={experience.company_name}
@@ -49,7 +49,7 @@ const Experience = () => {
         <h2 className={styles.sectionHeadText}>Experiences</h2>
       </motion.div>
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline lineColor="black">
+        <VerticalTimeline lineColor="#4A4941">
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
