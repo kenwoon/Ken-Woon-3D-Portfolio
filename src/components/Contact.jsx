@@ -111,7 +111,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="flex flex-col xl:flex-1 xl:h-auto sm:h-[500px] md:h-[1000px] h-[1000px]"
       >
-        <RoomCanvas />
+        <RoomCanvas className="relative"/>
       </motion.div>
     </div>
   );

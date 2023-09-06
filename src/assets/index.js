@@ -35,6 +35,14 @@ import portfoliocreation from "./portfoliocreation.png";
 import agesql from "./agesql.png";
 import inventorysystem from "./inventorysystem.png";
 import dataanalytics from "./dataanalytics.png";
+import xr4 from "./xr4.png";
+import xr3 from "./xr3.png";
+import xr2 from "./xr2.png";
+import xr1 from "./xr1.png";
+import muffin from "./muffin.png";
+import cocoon from "./cocoon.png";
+import mems from "./mems.png";
+import minesweeper from "./minesweeper.png";
 
 export {
   logo,
@@ -70,5 +78,13 @@ export {
   portfoliocreation,
   agesql,
   inventorysystem,
-  dataanalytics
+  dataanalytics,
+  xr4,
+  xr3,
+  xr2,
+  xr1,
+  muffin,
+  cocoon,
+  mems,
+  minesweeper
 };

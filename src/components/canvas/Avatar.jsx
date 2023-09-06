@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, Float, OrbitControls, Preload, Sky, useAnimations, useFBX, useGLTF } from "@react-three/drei";
+import { Environment, Float, OrbitControls, Preload, useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import { useControls } from "leva";
 import * as THREE from "three";
 
@@ -9,8 +9,8 @@ import CanvasLoader from "../Loader";
 const Avatar = ({ isMobile, animation }) => {
   const group = useRef();
 
-  const avatar = useGLTF("./avatar.gltf");
-  const { materials } = useGLTF("./avatar.gltf");
+  const avatar = useGLTF("./avatar.glb");
+  const { materials } = useGLTF("./avatar.glb");
   
   const { animations: fallingAnimation } = useFBX("./animations/falling idle.fbx");
   const { animations: landingAnimation } = useFBX("./animations/falling to landing.fbx");
@@ -56,8 +56,8 @@ const Avatar = ({ isMobile, animation }) => {
   return (
     <Float>
       <mesh
-        scale={isMobile ? 1.75 : 1.85}
-        position={isMobile ? [0, -1.75, 0] : [0, -2, 0]}
+        scale={isMobile ? 1.35 : 1.65}
+        position={isMobile ? [0, -2, 0] : [0, -1.5, 0]}
       >
         <pointLight intensity={1} position={[0, 1.15, 0.65]} />
         <primitive
@@ -107,7 +107,7 @@ const AvatarCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       shadows
       dpr={[1, 2]}
       camera={{ position: [0, 3, 5], fov: 35 }}
@@ -115,6 +115,7 @@ const AvatarCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+          // autoRotate
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, Float, OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Environment, Float, OrbitControls, OrthographicCamera, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from '../Loader';
 
 const Room = ({isMobile}) => {
@@ -9,12 +9,12 @@ const Room = ({isMobile}) => {
   return (
     <Float>
       <mesh
-        scale={isMobile ? 0.5 : 0.6}
+        scale={isMobile ? 0.5 : 0.55}
       >
         <primitive
           object={room.scene}
-          position-y={-1}
-          rotation={[Math.PI / 128, -Math.PI / 2.3, Math.PI / 128]}
+          position-y={-1.5}
+          rotation={[Math.PI / 5, -Math.PI / 4.5, Math.PI / 256]}
         />
       </mesh>
     </Float>
@@ -46,29 +46,41 @@ const RoomCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      shadows
-      framLoop="demand"
-      gl={{ preserveDrawingBuffer: true}}
-      camera= {{
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6]
-      }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          // maxPolarAngle={Math.PI / 2}
-          // minPolarAngle={Math.PI / 2}
-        />
-        <Environment preset="city" />
-        <Room isMobile={isMobile}/>
-      </Suspense>
-      
-      <Preload all />
-    </Canvas>
+      <Canvas
+        shadows
+        framloop="demand"
+        gl={{ preserveDrawingBuffer: true}}
+        // orthographic
+        // camera= {{
+        //   fov: 45,
+        //   near: 0.1,
+        //   far: 200,
+        //   position: [-4, 3, 6]
+        // }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            // maxPolarAngle={Math.PI / 2}
+            // minPolarAngle={Math.PI / 2}
+          />
+          <OrthographicCamera
+            makeDefault
+            zoom={isMobile ? 100 : 160}
+            // top={200}
+            // bottom={-200}
+            // left={200}
+            // right={-200}
+            near={0.1}
+            far={2000}
+            position={[0, 0, 200]}
+          />
+          <Environment preset="city" />
+          <Room isMobile={isMobile}/>
+        </Suspense>
+        
+        <Preload all />
+      </Canvas>
   );
 };
 

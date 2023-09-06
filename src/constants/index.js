@@ -49,10 +49,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+  // {
+  //   name: "Node JS",
+  //   icon: nodejs,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -73,10 +73,10 @@ const technologies = [
     name: "C#",
     icon: csharp,
   },
-  {
-    name: "git",
-    icon: git,
-  },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
   {
     name: "Java",
     icon: java,
@@ -179,7 +179,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Portfolio Creation",
+    name: "3D Web Design and Development",
     company: "Personal",
     company_link: "https://kenwoon.github.io/portfolio",
     description:
@@ -301,6 +301,180 @@ const projects = [
     ],
     image: dataanalytics,
     source_code_link: "https://github.com/kenwoon/Vancouver-Historical-Crime-Data-Analytics-Project"
+  },
+  {
+    name: "VR Target Throwing Game",
+    company: "Circuit Stream & UBCO",
+    company_link: "https://ubcexl.xrcourse.com/xr-dev",
+    description:
+      "Used the advanced Unity physics engine to create a realistic skills-based game involving throwing food at moving targets. Utilised the animation system to animate VR hands and detect collisions, allowing the player to pick up projectiles and realistically throw them at randomly generated targets. Created the classic VR teleport with all the UX functions. Used layers and LayerMask, Raycast, line renderers, and coroutines to construct a VR locomotion system.",
+    tags: [
+      {
+        name: "Unity",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: xr4,
+    source_code_link: "https://github.com/kenwoon/JULY22-XRD-Project04"
+  },
+  {
+    name: "AR X-Ray Simulator with Vuforia",
+    company: "Circuit Stream & UBCO",
+    company_link: "https://ubcexl.xrcourse.com/xr-dev",
+    description:
+      "Constructed an Augmented Reality (AR) application using Vuforia. Used multiple Image Targets to build an X-Ray simulator, where the user can scan a 3D model of the human body to see what is inside.",
+    tags: [
+      {
+        name: "C#",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Unity",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: xr3,
+    source_code_link: "https://github.com/kenwoon/JULY22-XRD-Project03"
+  },
+  {
+    name: "Space Exploration Simulation",
+    company: "Circuit Stream & UBCO",
+    company_link: "https://ubcexl.xrcourse.com/xr-dev",
+    description:
+      "Created a simulation of a solar system; planets and moons that orbit a star. Animated celestial bodies with C# code, and created a physics controlled rocket to explore the space. Included functionalities such as firing laser bolts from the ship to make objects interact with the physics engine.",
+    tags: [
+      {
+        name: "C#",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Unity",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: xr2,
+    source_code_link: "https://github.com/kenwoon/JULY22-XRD-Project02"
+  },
+  {
+    name: "3D Unity Introductory Project",
+    company: "Circuit Stream & UBCO",
+    company_link: "https://ubcexl.xrcourse.com/xr-dev",
+    description:
+      "Learning the Unity interface, creating Prefabs, importing Assets, and using character controller. Practiced navigating the editor, manipulating objects in the scene, making them pretty with materials, saving them with prefabs, modifying them with ProBuilder, and importing them from the asset store.",
+    tags: [
+      {
+        name: "C#",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Unity",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: xr1,
+    source_code_link: "https://github.com/kenwoon/JULY22-XRD-Project01"
+  },
+  {
+    name: "Muffin Clicker Game in Unity",
+    company: "Circuit Stream & UBCO",
+    company_link: "https://ubcexl.xrcourse.com/xr-dev",
+    description:
+      "Coded basic C# scripts and created custom components in Unity for a Muffin Clicker game. Interpreted the code structure of a Unity script and deciphered using statements, produced GameObject components using scripts, animated objects with functions, and practiced best coding practices through understanding code smells and refactoring.",
+    tags: [
+      {
+        name: "C#",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Unity",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: muffin,
+    source_code_link: "https://github.com/kenwoon/JULY22-C-SF-MuffinClicker"
+  },
+  // {
+  //   name: "Amazons Chess AI Programming",
+  //   company: "UBCO",
+  //   company_link: "https://ok.ubc.ca/about/",
+  //   description:
+  //     "Created an AI that is able to play Amazons Chess by finding the best state-space possible for the current given state-space. Implemented Minimax algorithm using Iterative Deepening Depth First Search in order to stop finding best move at a given time but still have a good enough move while only use a reasonable computational power and memory.",
+  //   tags: [
+  //     {
+  //       name: "Git",
+  //       color: "brown-text-gradient",
+  //     },
+  //     {
+  //       name: "Java",
+  //       color: "brown-text-gradient",
+  //     }
+  //   ],
+  //   image: "",
+  //   source_code_link: "https://github.com/kenwoon/ChessAI"
+  // },
+  {
+    name: "Cocoon - Occupant Safety Electric Vehicle Design",
+    company: "UBCO",
+    company_link: "https://ok.ubc.ca/about/",
+    description:
+      "Designed a low-cost, environmentally friendly electric vehicle focused on occupant safety. Crafted a detailed engineering model using SolidWorks. Fabricated a vehicle design that was not only energy efficient and environmentally friendly but also prioritized the safety of the occupants, considering various factors such as the materials used, the design of the vehicle, and the features and systems in cluded.",
+    tags: [
+      {
+        name: "SOLIDWORKS",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: cocoon,
+    source_code_link: "https://docs.google.com/document/d/1LNknZeBnWWaPKUCtKlzPoIQlNHG1TlUgOwPzij1hmzk/edit?usp=sharing"
+  },
+  {
+    name: "Nanomanipulator MEMS Design and Fabrication",
+    company: "UBCO",
+    company_link: "https://ok.ubc.ca/about/",
+    description:
+      "Designed, built, and tested a nanomanipulator using MEMS (microelectromechanical systems) microactuators to overcome the limitation of low output forces. Using the UBCO In-House fabrication process, a physical MEMS device was created based on customised Klayout designs. The device includes a linear amplification mechanism utilizing the combination of a nanomanipulator and a thermal actuator. This has been used to minimize input displacements to achieve high positioning resolution at the output probe tip and amplify output forces to manipulate nano-objects.",
+    tags: [
+      {
+        name: "KLayout",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: mems,
+    source_code_link: "https://docs.google.com/document/d/1ZOSG_DvUoGTQsbXLrj3MO5d1V1GWEHNMKf-vge4gTJU/edit?usp=sharing"
+  },
+  // {
+  //   name: "GC Aries Warship Modelling",
+  //   company: "UBCO",
+  //   company_link: "https://ok.ubc.ca/about/",
+  //   description:
+  //     "Designed and modelled a warship inspired by the GC Aries using SOLIDWORKS. Utilised various SOLIDWORKS tools, such as 3D sketching, extrusion, and the software's assembly capabilities to create the different parts and pieces of the warship. Referenced images and videos from GrabCAD for other creative ideas and inspiration.",
+  //   tags: [
+  //     {
+  //       name: "SOLIDWORKS",
+  //       color: "brown-text-gradient",
+  //     }
+  //   ],
+  //   image: "",
+  //   source_code_link: ""
+  // },
+  {
+    name: "Minesweeper Game with Java",
+    company: "UBCO",
+    company_link: "https://ok.ubc.ca/about/",
+    description:
+      "Created a replica of the classic Minesweeper game using object-oriented programming in Java. Set up the program GUI displaying the header and grid sections. Implemented complete functionalities by handling responses appropriately with each event occurrence.",
+    tags: [
+      {
+        name: "Git",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Java",
+        color: "brown-text-gradient",
+      }
+    ],
+    image: minesweeper,
+    source_code_link: "https://github.com/kenwoon/Minesweeper/"
   }
 ];
 
