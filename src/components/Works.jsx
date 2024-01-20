@@ -27,7 +27,7 @@ const ProjectCard = ({ index, company, company_link, name, description, tags, im
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover cursor-pointer" onClick={()=> window.open(image)}>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:w-[10%] hover:h-[25%]"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:w-[15%] hover:h-[20%]"
             >
               <img
                 src={github}

@@ -12,7 +12,7 @@ const App = () => {
           <Experience />
           <Tech />
           <Works />
-          {/* <Feedbacks /> */}
+          <Feedbacks />
         </div>
         <div className="bg-[#435334] relative z-0">
           <Contact />

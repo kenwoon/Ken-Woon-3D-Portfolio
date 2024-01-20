@@ -49,22 +49,22 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "Node JS",
-  //   icon: nodejs,
-  // },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
   {
     name: "React JS",
     icon: reactjs,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
   {
     name: "C",
     icon: c,
@@ -73,10 +73,10 @@ const technologies = [
     name: "C#",
     icon: csharp,
   },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
+  {
+    name: "git",
+    icon: git,
+  },
   {
     name: "Java",
     icon: java,
@@ -85,10 +85,10 @@ const technologies = [
     name: "MySQL",
     icon: mysql,
   },
-  // {
-  //   name: "PHP",
-  //   icon: php,
-  // },
+  {
+    name: "PHP",
+    icon: php,
+  },
   {
     name: "PostgreSQL",
     icon: postgresql,
@@ -97,22 +97,22 @@ const technologies = [
     name: "Python",
     icon: python,
   },
-  // {
-  //   name: "Blender",
-  //   icon: blender,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
-  // {
-  //   name: "SOLIDWORKS",
-  //   icon: solidworks,
-  // },
-  // {
-  //   name: "Unity",
-  //   icon: unity,
-  // }
+  {
+    name: "Blender",
+    icon: blender,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+  {
+    name: "SOLIDWORKS",
+    icon: solidworks,
+  },
+  {
+    name: "Unity",
+    icon: unity,
+  }
 ];
 
 const experiences = [
@@ -152,28 +152,12 @@ const experiences = [
 
 const testimonials = [
   {
-  //   testimonial:
-  //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-  //   name: "Sara Lee",
-  //   designation: "CFO",
-  //   company: "Acme Co",
-  //   image: "https://randomuser.me/api/portraits/women/4.jpg",
-  // },
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: "Chris Brown",
-  //   designation: "COO",
-  //   company: "DEF Corp",
-  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: "Lisa Wang",
-  //   designation: "CTO",
-  //   company: "456 Enterprises",
-  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial:
+      "From the moment you joined my team, it was evident that you possessed a remarkable level of enthusiasm and eagerness to learn. Your commitment to your tasks and projects was truly commendable, and your proactive approach to seeking out new challenges and responsibilities was inspiring to both your peers and Project Leader.",
+    name: "Udaya Ganesh",
+    designation: "Operations Manager",
+    company: "Bitnine Global Inc.",
+    image: "https://cdn.discordapp.com/avatars/1060274633368162407/d6ff962598830cce1ad506b3fc783556.webp?size=128",
   }
 ];
 
