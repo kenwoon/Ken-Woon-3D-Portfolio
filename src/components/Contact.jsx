@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { styles } from "../styles";
@@ -50,6 +50,29 @@ const Contact = () => {
       alert('Something went wrong.');
     });
   };
+
+  // const [isMobile, setIsMobile] = useState(false);
+
+  // useEffect(() => {
+  //   // Add a listener for changes to the screen size
+  //   const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+  //   // Set the initial value of the `isMobile` state variable
+  //   setIsMobile(mediaQuery.matches);
+
+  //   // Define a callback function to handle changes to the media query
+  //   const handleMediaQueryChange = (event) => {
+  //     setIsMobile(event.matches);
+  //   };
+
+  //   // Add the callback function as a listener for changes to the media query
+  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+  //   // Remove the listener when the component is unmounted
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  //   };
+  // }, []);
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -109,7 +132,7 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="flex flex-col xl:flex-1 xl:h-auto sm:h-[500px] md:h-[1000px] h-[1000px]"
+        className={"flex flex-col xl:flex-1 xl:h-auto sm:h-[375px] md:h-[500px] h-[40vh]"}
       >
         <RoomCanvas className="relative"/>
       </motion.div>
