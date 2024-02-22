@@ -14,7 +14,7 @@ export function Avatar(props) {
   //   wireframe: false
   // });
   const group = useRef();
-  const { nodes, materials } = useGLTF("/avatar.glb")
+  const { nodes, materials } = useGLTF("./avatar.glb")
   
   // const { animations: fallingAnimation } = useFBX("./animations/falling idle.fbx");
   // const { animations: landingAnimation } = useFBX("./animations/falling to landing.fbx");
@@ -126,7 +126,7 @@ export function Avatar(props) {
   );
 }
 
-// useGLTF.preload("/avatar.glb");
+// useGLTF.preload("./avatar.glb");
 
 const AvatarCanvas = () => {
   // const { animation } = useControls({
