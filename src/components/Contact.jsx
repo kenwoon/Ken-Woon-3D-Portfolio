@@ -107,12 +107,12 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className={"flex flex-col xl:flex-1 xl:h-auto sm:h-[375px] md:h-[500px] h-[40vh]"}
       >
         <RoomCanvas className="relative"/>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
