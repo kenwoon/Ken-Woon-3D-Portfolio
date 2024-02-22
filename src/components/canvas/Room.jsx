@@ -3,13 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, Float, OrbitControls, OrthographicCamera, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from '../Loader';
 
-const Room = ({isMobile}) => {
+const Room = () => {
   const room = useGLTF('./scene.glb');
 
   return (
     <Float>
       <mesh
-        scale={isMobile ? 0.5 : 0.55}
+        scale={0.5}
       >
         <primitive
           object={room.scene}
@@ -22,28 +22,28 @@ const Room = ({isMobile}) => {
 };
 
 const RoomCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+  // useEffect(() => {
+  //   // Add a listener for changes to the screen size
+  //   const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
+  //   // Set the initial value of the `isMobile` state variable
+  //   setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
+  //   // Define a callback function to handle changes to the media query
+  //   const handleMediaQueryChange = (event) => {
+  //     setIsMobile(event.matches);
+  //   };
 
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+  //   // Add the callback function as a listener for changes to the media query
+  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  //   // Remove the listener when the component is unmounted
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  //   };
+  // }, []);
 
   return (
       <Canvas
@@ -66,7 +66,7 @@ const RoomCanvas = () => {
           />
           <OrthographicCamera
             makeDefault
-            zoom={isMobile ? 100 : 160}
+            zoom={100}
             // top={200}
             // bottom={-200}
             // left={200}
@@ -76,7 +76,7 @@ const RoomCanvas = () => {
             position={[0, 0, 200]}
           />
           <Environment preset="city" />
-          <Room isMobile={isMobile}/>
+          <Room />
         </Suspense>
         
         <Preload all />
