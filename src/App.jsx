@@ -4,6 +4,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const App = () => {
   return (
     <BrowserRouter>
+    <meta name="theme-color" content="{{#FAF1E4}}" />
       <div className="relative z-0 bg-primary">
         <div className="bg-[#FAF1E4]">
           <Navbar />
