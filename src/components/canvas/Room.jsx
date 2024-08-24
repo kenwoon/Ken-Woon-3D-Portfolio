@@ -9,7 +9,7 @@ const Room = () => {
   return (
     <Float>
       <mesh
-        scale={0.5}
+        scale={0.75}
       >
         <primitive
           object={room.scene}

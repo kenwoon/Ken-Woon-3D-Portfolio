@@ -20,102 +20,118 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: web
   },
   {
     title: "React Native Developer",
-    icon: mobile,
+    icon: mobile
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: backend
   },
   {
     title: "Content Creator",
-    icon: creator,
+    icon: creator
   }
 ];
 
 const technologies = [
   {
     name: "CSS 3",
-    icon: css,
+    icon: css
   },
   {
     name: "HTML 5",
-    icon: html,
+    icon: html
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: javascript
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: nodejs
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: reactjs
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: tailwind
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: threejs
   },
   {
     name: "C",
-    icon: c,
+    icon: c
   },
   {
     name: "C#",
-    icon: csharp,
+    icon: csharp
   },
   {
     name: "git",
-    icon: git,
+    icon: git
   },
   {
     name: "Java",
-    icon: java,
+    icon: java
   },
   {
     name: "MySQL",
-    icon: mysql,
+    icon: mysql
   },
   {
     name: "PHP",
-    icon: php,
+    icon: php
   },
   {
     name: "PostgreSQL",
-    icon: postgresql,
+    icon: postgresql
   },
   {
     name: "Python",
-    icon: python,
+    icon: python
   },
   {
     name: "Blender",
-    icon: blender,
+    icon: blender
   },
   {
     name: "docker",
-    icon: docker,
+    icon: docker
   },
   {
     name: "SOLIDWORKS",
-    icon: solidworks,
+    icon: solidworks
   },
   {
     name: "Unity",
-    icon: unity,
+    icon: unity
   }
 ];
 
 const experiences = [
+  {
+    title: "Junior Data Analyst Trainee",
+    company_name: "NPower Canada",
+    icon: npower,
+    link: "https://npowercanda.ca/about/",
+    iconBg: "#E6DEDD",
+    date: "May 2024 - August 2024",
+    points: [
+      "Performed data wrangling and mining using Excel and Python (Pandas, Numpy)",
+      "Completed capstone projects involving data collection, analysis, and visualization using Python libraries",
+      "Created visualizations and interactive dashboards with Python (Matplotlib, Seaborn, Plotly) and IBM Cognos Analytics",
+      "Composed SQL queries to access cloud databases using Jupyter Notebook",
+      "Utilized core Azure services for AI applications, cost control, and billing management",
+      "Successfully completed Agile projects using Scrum, Kanban, and Gantt Charts"
+    ]
+  },
   {
     title: "Software Engineer Intern",
     company_name: "Bitnine Global Inc.",
@@ -124,12 +140,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "February 2023 - August 2023",
     points: [
-      "Participating in an (open-source) Apache Top-Level Project \"Apache AGE\" as one of its contributors.",
-      "Collaborating with Bitnine's Apache AGE open-source community managers and technical project managers.",
-      "Debugging and testing Apache AGE source code.",
-      "Proactively learn about open-source DBMS software such as PostgreSQL including its internal mechanisms and how Graph queries work.",
-      "Developing Graph database management system software technologies and related applications using various programming languages including C, Python, and JavaScript.",
-      "Creating and updating technical writings about Apache AGE."
+      "Emerged as the primary contributor in the assigned project (Developing AgeSQL), responsible for constructing the main structure of the software by modifying more than 68,000 lines of code",
+      "Assisted over 5,000 users with PostgreSQL and Apache AGE-related issues, enhancing technical support skills and improving user satisfaction through effective problem-resolution",
+      "Contributed extensively to the community through documentation, articles, and participation in forum discussions, ultimately achieving the top 2% reputation growth on Stack Overflow for the quarter",
+      "Proactively learned about open-source DBMS software such as PostgreSQL including its internal mechanisms and how Graph queries work",
+      "Attained recognition as one of the highest-performing interns within the organization by consistently exceeding KPI quota points monthly with an average of 217% and achieving a maximum of 483%",
     ]
   },
   {
@@ -140,12 +155,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "September 2018 - December 2022",
     points: [
-      "Bachelor of Applied Science.",
-      "Major in Electrical Engineering, Mechatronics Option.",
-      "Minor in Computer Science.",
-      "Designated \"with Distinction\" graduation standing.",
-      "Deputy Vice-Chancellor Scholarship for International Students (2021).",
-      "Outstanding International Student Award (2018)."
+      "Bachelor of Applied Science",
+      "Major in Electrical Engineering, Mechatronics Option",
+      "Minor in Computer Science",
+      "Graduated with distinction standing",
+      "Received Deputy Vice-Chancellor Scholarship for International Students (2021)",
+      "Received Outstanding International Student Award (2018)"
     ]
   },
 ];
@@ -157,11 +172,42 @@ const testimonials = [
     name: "Udaya Ganesh",
     designation: "Operations Manager",
     company: "Bitnine Global Inc.",
-    image: "https://cdn.discordapp.com/avatars/1060274633368162407/d6ff962598830cce1ad506b3fc783556.webp?size=128",
+    image: "https://cdn.discordapp.com/avatars/1060274633368162407/d6ff962598830cce1ad506b3fc783556.webp?size=128"
   }
 ];
 
 const projects = [
+  {
+    name: "Data Analytics - Shifting Technology Trends",
+    company: "Npower Canda",
+    company_link: "https://npowercanda.ca/about/",
+    description:
+      "Leveraged libraries such as Pandas, NumPy, Matplotlib, and Seaborn to perform in-depth data analysis and create insightful visualizations through IBM Cognos Analytics that supported data-driven decision-making. Applied advanced Python and SQL techniques to gather, clean, and transform data from multiple sources, ensuring high-quality, reliable datasets for analysis.",
+    tags: [
+      {
+        name: "Python",
+        color: "brown-text-gradient"
+      },
+      {
+        name: "SQL",
+        color: "brown-text-gradient"
+      },
+      {
+        name: "IBM Cognos Analytics",
+        color: "brown-text-gradient"
+      },
+      {
+        name: "Microsoft Excel",
+        color: "brown-text-gradient"
+      },
+      {
+        name: "Microsoft Powerpoint",
+        color: "brown-text-gradient"
+      }
+    ],
+    image: shiftintech,
+    source_code_link: "https://github.com/kenwoon/Data-Analysis-of-Shifting-Tech-Trends"
+  },
   {
     name: "3D Web Design and Development",
     company: "Personal",
@@ -171,39 +217,39 @@ const projects = [
     tags: [
       {
         name: "CSS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "HTML",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "JavaScript",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Node JS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "React JS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Tailwind CSS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Three JS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Git",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Blender",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
     ],
     image: portfoliocreation,
@@ -218,27 +264,27 @@ const projects = [
     tags: [
       {
         name: "C",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Cypher",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Git",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Lex / Yacc",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "SQL",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Command Line / Bash",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
     ],
     image: agesql,
@@ -253,11 +299,11 @@ const projects = [
     tags: [
       {
         name: "Java",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Git",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: inventorysystem,
@@ -272,15 +318,15 @@ const projects = [
     tags: [
       {
         name: "Git",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Python",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Tableau",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: dataanalytics,
@@ -295,7 +341,7 @@ const projects = [
     tags: [
       {
         name: "Unity",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: xr4,
@@ -310,11 +356,11 @@ const projects = [
     tags: [
       {
         name: "C#",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Unity",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: xr3,
@@ -329,11 +375,11 @@ const projects = [
     tags: [
       {
         name: "C#",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Unity",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: xr2,
@@ -348,11 +394,11 @@ const projects = [
     tags: [
       {
         name: "C#",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Unity",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: xr1,
@@ -367,11 +413,11 @@ const projects = [
     tags: [
       {
         name: "C#",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Unity",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: muffin,
@@ -386,11 +432,11 @@ const projects = [
   //   tags: [
   //     {
   //       name: "Git",
-  //       color: "brown-text-gradient",
+  //       color: "brown-text-gradient"
   //     },
   //     {
   //       name: "Java",
-  //       color: "brown-text-gradient",
+  //       color: "brown-text-gradient"
   //     }
   //   ],
   //   image: "",
@@ -405,7 +451,7 @@ const projects = [
     tags: [
       {
         name: "SOLIDWORKS",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: cocoon,
@@ -420,27 +466,27 @@ const projects = [
     tags: [
       {
         name: "KLayout",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: mems,
     source_code_link: "https://docs.google.com/document/d/1ZOSG_DvUoGTQsbXLrj3MO5d1V1GWEHNMKf-vge4gTJU/edit?usp=sharing"
   },
-  // {
-  //   name: "GC Aries Warship Modelling",
-  //   company: "UBCO",
-  //   company_link: "https://ok.ubc.ca/about/",
-  //   description:
-  //     "Designed and modelled a warship inspired by the GC Aries using SOLIDWORKS. Utilised various SOLIDWORKS tools, such as 3D sketching, extrusion, and the software's assembly capabilities to create the different parts and pieces of the warship. Referenced images and videos from GrabCAD for other creative ideas and inspiration.",
-  //   tags: [
-  //     {
-  //       name: "SOLIDWORKS",
-  //       color: "brown-text-gradient",
-  //     }
-  //   ],
-  //   image: "",
-  //   source_code_link: ""
-  // },
+  {
+    name: "GC Aries Warship Modelling",
+    company: "UBCO",
+    company_link: "https://ok.ubc.ca/about/",
+    description:
+      "Designed and modelled a warship inspired by the GC Aries using SOLIDWORKS. Utilised various SOLIDWORKS tools, such as 3D sketching, extrusion, and the software's assembly capabilities to create the different parts and pieces of the warship. Referenced images and videos from GrabCAD for other creative ideas and inspiration.",
+    tags: [
+      {
+        name: "SOLIDWORKS",
+        color: "brown-text-gradient"
+      }
+    ],
+    image: warship,
+    source_code_link: "https://drive.google.com/file/d/1-dFdbhImzr0TRDSPlhQkBDeS5D8TP-Ik/view"
+  },
   {
     name: "Minesweeper Game with Java",
     company: "UBCO",
@@ -450,11 +496,11 @@ const projects = [
     tags: [
       {
         name: "Git",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       },
       {
         name: "Java",
-        color: "brown-text-gradient",
+        color: "brown-text-gradient"
       }
     ],
     image: minesweeper,

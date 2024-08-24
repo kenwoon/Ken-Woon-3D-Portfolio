@@ -27,10 +27,11 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import unity from "./tech/unity.png";
 
-import meta from "./company/meta.png";
+import npower from "./company/npower.png";
 import bitnine from "./company/bitnine.png";
-import ubc from "./company/ubc.png"
+import ubc from "./company/ubc.png";
 
+import shiftintech from "./shiftintech.png";
 import portfoliocreation from "./portfoliocreation.png";
 import agesql from "./agesql.png";
 import inventorysystem from "./inventorysystem.png";
@@ -42,6 +43,7 @@ import xr1 from "./xr1.png";
 import muffin from "./muffin.png";
 import cocoon from "./cocoon.png";
 import mems from "./mems.png";
+import warship from "./warship.jpeg"
 import minesweeper from "./minesweeper.png";
 
 export {
@@ -53,6 +55,7 @@ export {
   github,
   menu,
   close,
+
   blender,
   c,
   csharp,
@@ -72,9 +75,12 @@ export {
   tailwind,
   threejs,
   unity,
-  meta,
+
+  npower,
   bitnine,
   ubc,
+
+  shiftintech,
   portfoliocreation,
   agesql,
   inventorysystem,
@@ -86,5 +92,6 @@ export {
   muffin,
   cocoon,
   mems,
+  warship,
   minesweeper
 };
